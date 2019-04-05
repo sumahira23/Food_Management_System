@@ -8,10 +8,16 @@
             android:id="@+id/profile"
             android:icon="@drawable/ic_menu_camera"
             android:title="Profile" />
+
+        <item
+            android:id="@+id/menu"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Menu" />
         <item
             android:id="@+id/notice_board"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Notice Board" />
+
         <item
             android:id="@+id/log_out"
             android:icon="@drawable/ic_menu_slideshow"

@@ -1,5 +1,6 @@
 package com.example.sumahira.food_management_system;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -84,7 +85,12 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.notice_board) {
 
-        } else if (id == R.id.log_out) {
+        }
+         else if (id == R.id.menu){
+           OpenNewPages();
+        }
+
+        else if (id == R.id.log_out) {
 
         }  else if (id == R.id.nav_share) {
 
@@ -96,4 +102,10 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void OpenNewPages() {
+        Intent intent = new Intent(MainActivity.this,foodmenu.class);
+        startActivity(intent);
+    }
+
 }
